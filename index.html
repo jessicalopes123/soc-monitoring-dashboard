@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOC Monitoring Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>SOC Monitoring Dashboard</h1>
+      <p>Cybersecurity Monitoring Center</p>
+
+      <div id="clock"></div>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Alertas Críticos</h2>
+        <p id="alertas">12</p>
+      </div>
+
+      <div class="card">
+        <h2>Ataques Bloqueados</h2>
+        <p id="ataques">87</p>
+      </div>
+
+      <div class="card">
+        <h2>Usuários Online</h2>
+        <p>34</p>
+      </div>
+
+      <div class="card">
+        <h2>Firewall</h2>
+        <p class="ativo">ATIVO</p>
+      </div>
+    </section>
+
+    <section class="logs">
+      <h2>Logs de Segurança</h2>
+
+      <div id="log-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

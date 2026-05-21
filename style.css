@@ -1,0 +1,110 @@
+/* style.css */
+
+body {
+  background: #0a0a0a;
+  color: #00ff88;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* HEADER */
+
+header {
+  background: #111;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 2px solid #00ff88;
+  box-shadow: 0 0 15px #00ff88;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+header p {
+  color: #aaa;
+}
+
+#clock {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1a1a1a;
+  width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #00ff88;
+  box-shadow: 0 0 10px #00ff88;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.ativo {
+  color: #00ff88;
+}
+
+/* LOGS */
+
+.logs {
+  margin: 20px;
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #00ff88;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+.logs h2 {
+  margin-bottom: 20px;
+}
+
+.log-item {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  color: #ddd;
+}
+
+.log-item:last-child {
+  border-bottom: none;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
